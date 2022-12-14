@@ -421,7 +421,7 @@
                 <div class="grid mb-20 lg:px-4 lg:grid-cols-2 md:mb-40 md:px-40">
                     <!-- Form Ucapan & Doa -->
                     <div
-                        class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg w-full lg:w-[95%]">
+                        class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg w-full">
                         <h3 class="mb-2 text-3xl">Wedding Wish</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800 mb-3"></span>
                         <input type="text" name="" id="guest_name"
@@ -443,7 +443,7 @@
                     </div>
                     <!-- List Ucapan & Doa -->
                     <div id="list-wishes"
-                        class="w-full lg:w-[95%] relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg text-slate-800 overflow-auto max-h-[488px]">
+                        class="w-full relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg text-slate-800 overflow-auto max-h-[488px]">
                         <!-- Ucapan & Doa Start -->
                         @foreach ($wishes as $item)
                             <div class="w-full px-2 py-2 mb-2 rounded-md shadow-lg text-start bg-primary">
