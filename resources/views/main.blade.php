@@ -419,7 +419,7 @@
           </form>
         </div> -->
                 <img src="{{ asset('assets/img/rsvp/congrat.png') }}" class="w-20 mt-12" />
-                <div class="grid mb-20 lg:px-4 lg:grid-cols-2 md:mb-40 md:px-40">
+                <div class="grid mb-20 lg:px-4 lg:grid-cols-2 md:mb-40 md:px-40 w-full">
                     <!-- Form Ucapan & Doa -->
                     <div
                         class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg w-full lg:w-[95%]">
