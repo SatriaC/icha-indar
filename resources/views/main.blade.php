@@ -330,7 +330,7 @@
                         <!-- <img src="assets/img/event/ring.png" class="w-28" /> -->
                         <!-- <h3 class="mt-3 mb-3 text-3xl">Resepsi</h3> -->
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-4 mb-2 lg:text-2xl md:text-xl">
+                        <p class="mt-4 mb-2 lg:text-2xl md:text-xl font-quicksand">
                             "We first met on June 27th 2021 at one of the cafe in Dago Atas.
                             That was a short meeting yet so impressive for both of us that
                             we managed to get to know and understand one another afterward.
