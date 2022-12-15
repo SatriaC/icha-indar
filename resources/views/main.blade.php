@@ -141,7 +141,8 @@
       /> -->
             <img src="{{ asset('assets/img/home/bottom-end.png') }}"
                 class="absolute bottom-0 right-0 w-60 md:w-96 lg:w-64" />
-            <div class="relative flex flex-col h-screen px-4 font-serif text-center items-center" style="padding-top: 33px;">
+            <div class="relative flex flex-col h-screen px-4 font-serif text-center items-center"
+                style="padding-top: 33px;">
                 <img src="{{ asset('assets/img/home/pengantin-3.png') }}"
                     class="p-5 rounded-t-full w-[150%] md:w-3/5 md:p-6 lg:w-1/4" />
                 <h4 class="mx-16 mb-3 text-xl md:mx-20 md:text-3xl lg:text-xl lg:mx-16">
@@ -509,13 +510,13 @@
                 <div class="mt-2">
                     <input type="text" name="" id=""
                         class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 placeholder:text-slate-100 text-center font-bold"
-                        value="23452345" readonly />
+                        value="7772262925" readonly />
                 </div>
                 <div class="mt-3">
                     <label for="" class="text-lg font-extrabold">Alamat</label>
                     <textarea name="" id="" cols="30" rows="5"
                         class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">
-    Jl. Aster IV no 38 RT 3 RW 3, Tirtajaya, Sukmajaya, Depok</textarea>
+                        JL. Dago Pojok No.45/ 161-B, RT.02, RW.03, KEL. Dago, KEC.Coblong, Bandung, Kode Pos 40135</textarea>
                 </div>
             </div>
             <div class="text-center">
