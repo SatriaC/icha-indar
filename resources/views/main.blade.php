@@ -515,8 +515,7 @@
                 <div class="mt-3">
                     <label for="" class="text-lg font-extrabold">Alamat</label>
                     <textarea name="" id="" cols="30" rows="5"
-                        class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">
-                        JL. Dago Pojok No.45/ 161-B, RT.02, RW.03, KEL. Dago, KEC.Coblong, Bandung, Kode Pos 40135</textarea>
+                        class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">JL. Dago Pojok No.45/ 161-B, RT.02, RW.03, KEL. Dago, KEC.Coblong, Bandung, Kode Pos 40135</textarea>
                 </div>
             </div>
             <div class="text-center">
