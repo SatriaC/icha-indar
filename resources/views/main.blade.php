@@ -27,32 +27,32 @@
             class="absolute bottom-0 left-0 w-32 md:w-64 lg:w-32" />
         <img src="{{ asset('assets/img/cover/bottom-end.png') }}" class="absolute bottom-0 right-0 w-60 md:w-96" />
         <div class="relative flex flex-col items-center justify-center h-screen px-4 font-serif text-center">
-            <div class="bg-[length:100%_100%] bg-cover_frame">
-                <h4 class="mx-16 mt-20 mb-5 text-xl md:mx-20 md:mt-28 md:text-3xl lg:mt-20 lg:text-xl lg:mx-16">
+            <div class="">
+                <h4 class="mx-16 mt-20 mb-8 text-xl md:mx-20 md:mt-28 md:text-3xl lg:mt-20 lg:text-xl lg:mx-16">
                     The Wedding of
                 </h4>
-                <h1 class="mb-4 text-6xl font-semibold md:text-8xl lg:text-6xl font-greatVibes">
+                <h1 class="mb-4 text-5xl font-semibold md:text-8xl lg:text-6xl font-greatVibes">
                     Ari
                 </h1>
-                <h3 class="mb-2 text-5xl font-semibold md:text-6xl lg:text-5xl font-greatVibes">
+                <h3 class="mb-2 text-3xl font-semibold md:text-6xl lg:text-5xl font-greatVibes">
                     &
                 </h3>
-                <h1 class="mb-20 text-6xl font-semibold md:mb-28 md:text-8xl lg:text-6xl lg:mb-20 font-greatVibes">
+                <h1 class="mb-12 text-5xl font-semibold md:mb-28 md:text-8xl lg:text-6xl lg:mb-20 font-greatVibes">
                     Fajar
                 </h1>
             </div>
             <div class="mt-8 text-lg md:text-2xl lg:text-lg">
                 <p class="">Dear,</p>
                 <!-- <p class="">Bapak/Ibu/Saudara/i</p> -->
-                <h4 class="mt-2 text-2xl font-semibold scale-x-90 md:text-4xl">
-                    {{ $for ?? '' }}
+                <h4 class="mt-1 text-2xl font-semibold scale-x-90 md:text-4xl">
+                    Keluarga Besar TvN
                 </h4>
                 <div></div>
                 <!-- <p class="text-xs md:text-lg lg:text-xs">
             *mohon maaf apabila ada kesalahan penulisan nama/gelar
           </p> -->
                 <button id="openPage"
-                    class="px-8 py-2 mt-6 text-2xl font-semibold border-2 rounded-lg md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-primary hover:bg-opacity-75 animate-pulse2 font-quicksand">
+                    class="px-8 py-2 mt-6 mb-20 text-2xl font-semibold border-2 rounded-lg md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-primary hover:bg-opacity-75 animate-pulse2 font-quicksand">
                     Open Invitation
                 </button>
             </div>
@@ -141,7 +141,7 @@
       /> -->
             <img src="{{ asset('assets/img/home/bottom-end.png') }}"
                 class="absolute bottom-0 right-0 w-60 md:w-96 lg:w-64" />
-            <div class="relative flex flex-col items-center justify-center h-screen px-4 font-serif text-center">
+            <div class="relative flex flex-col h-screen px-4 font-serif text-center" style="padding-top: 33px;">
                 <img src="{{ asset('assets/img/home/pengantin-3.png') }}"
                     class="p-5 rounded-t-full w-[150%] md:w-3/5 md:p-6 lg:w-1/4" />
                 <h4 class="mx-16 mb-3 text-xl md:mx-20 md:text-3xl lg:text-xl lg:mx-16">
