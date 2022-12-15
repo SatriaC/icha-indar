@@ -290,7 +290,7 @@
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Sunday</p>
                         <p class="mb-2">25 | December | 2022</p>
-                        <p class="mb-2">Pukul 09.00 - 10.00</p>
+                        <p class="mb-2">Pukul 11.00 - 14.00</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Address</p>
                         <p class="">Perkebunan Nusantara VIII. PT Persero</p>
