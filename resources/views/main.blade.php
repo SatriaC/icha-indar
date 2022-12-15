@@ -141,7 +141,7 @@
       /> -->
             <img src="{{ asset('assets/img/home/bottom-end.png') }}"
                 class="absolute bottom-0 right-0 w-60 md:w-96 lg:w-64" />
-            <div class="relative flex flex-col h-screen px-4 font-serif text-center" style="padding-top: 33px;">
+            <div class="relative flex flex-col h-screen px-4 font-serif text-center items-center" style="padding-top: 33px;">
                 <img src="{{ asset('assets/img/home/pengantin-3.png') }}"
                     class="p-5 rounded-t-full w-[150%] md:w-3/5 md:p-6 lg:w-1/4" />
                 <h4 class="mx-16 mb-3 text-xl md:mx-20 md:text-3xl lg:text-xl lg:mx-16">
