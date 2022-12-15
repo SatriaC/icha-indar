@@ -470,7 +470,7 @@
         <!-- SECTION RSVP END -->
 
         <!-- SECTION CLOSING START -->
-        <section id="closing" class="relative text-slate-800 bg-secondary" data-closing="7600">
+        <section id="closing" class="relative text-slate-800 bg-secondary" data-closing="7000">
             <div class="relative flex flex-col items-center px-8 py-8 text-center text-white font-quicksand">
                 <img src="{{ asset('assets/img/profile/center-1.png') }}"
                     class="absolute left-0 w-3/4 lg:w-1/4 lg:left-[25%]" />
