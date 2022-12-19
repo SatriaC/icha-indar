@@ -45,7 +45,7 @@
                 <p class="">Dear,</p>
                 <!-- <p class="">Bapak/Ibu/Saudara/i</p> -->
                 <h4 class="mt-1 text-2xl font-semibold scale-x-90 md:text-4xl">
-                    Keluarga Besar TvN
+                    {{ isset($for) ? $for : '' }}
                 </h4>
                 <div></div>
                 <!-- <p class="text-xs md:text-lg lg:text-xs">

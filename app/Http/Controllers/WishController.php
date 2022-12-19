@@ -11,7 +11,7 @@ class WishController extends Controller
     public function index(Request $request)
     {
         $wishes = Wish::where('couple_id', 1)->get();
-        $for = $request->for;
+        $for = $request->u;
         return view('main', compact(['wishes', 'for']));
     }
 
