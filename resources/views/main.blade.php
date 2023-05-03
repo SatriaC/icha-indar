@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>Wedding of Ari & Fajar</title>
+    <title>Wedding of {{ $bride }} & {{ $groom }}</title>
     <link rel="icon" href="{{ asset('assets/heart.png') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <!-- Font Family -->
@@ -32,13 +32,13 @@
                     The Wedding of
                 </h4>
                 <h1 class="mb-4 text-5xl font-semibold md:text-8xl lg:text-6xl font-greatVibes">
-                    Ari
+                    {{ $bride }}
                 </h1>
                 <h3 class="mb-2 text-3xl font-semibold md:text-6xl lg:text-5xl font-greatVibes">
                     &
                 </h3>
                 <h1 class="mb-12 text-5xl font-semibold md:mb-28 md:text-8xl lg:text-6xl lg:mb-20 font-greatVibes">
-                    Fajar
+                    {{ $groom }}
                 </h1>
             </div>
             <div class="mt-8 text-lg md:text-2xl lg:text-lg">
@@ -141,7 +141,7 @@
       /> -->
             <img src="{{ asset('assets/img/home/bottom-end.png') }}"
                 class="absolute bottom-0 right-0 w-60 md:w-96 lg:w-64" />
-            <div class="relative flex flex-col h-screen px-4 font-serif text-center items-center"
+            <div class="relative flex flex-col items-center h-screen px-4 font-serif text-center"
                 style="padding-top: 33px;">
                 <img src="{{ asset('assets/img/home/pengantin-3.png') }}"
                     class="p-5 rounded-t-full w-[150%] md:w-3/5 md:p-6 lg:w-1/4" />
@@ -149,7 +149,7 @@
                     The Wedding of
                 </h4>
                 <h2 class="mb-4 text-4xl font-semibold md:text-6xl lg:text-6xl font-greatVibes">
-                    Ari & Fajar
+                    {{ $bride }} & {{ $groom }}
                 </h2>
             </div>
         </section>
@@ -222,26 +222,44 @@
                 <h2 class="mt-20 text-3xl font-satisfy md:text-5xl lg:text-6xl">
                     The Groom
                 </h2>
-                <img src="{{ asset('assets/img/profile/pria.png') }}"
-                    class="relative p-5 mb-3 rounded-t-full w-60 lg:w-72" />
-                <h2 class="text-3xl font-satisfy lg:text-5xl md:text-4xl">
-                    Fajar Ismoko, S.S
+                <div class="pl-6 pr-6 mt-8 lg:w-1/3">
+                    <div class="px-4 py-4 bg-white text-secondary">
+                        <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
+                            {{ $groom }}</h4>
+                        <img class="w-full" src="{{ asset('assets/img/gallery/5.JPG') }}" alt="" />
+                        <div class="">
+                        </div>
+                    </div>
+                </div>
+                {{-- <img src="{{ asset('assets/img/profile/pria.png') }}"
+                    class="relative p-5 mb-3 rounded-t-full w-60 lg:w-72" /> --}}
+                <h2 class="mt-4 text-3xl font-satisfy lg:text-5xl md:text-4xl">
+                    Indar Jaya, S. E.
                 </h2>
                 <p class="text-xl">Son of</p>
-                <p class="text-xl">Mr. Sumarno</p>
-                <p class="text-xl">& Mrs. Juwarti</p>
+                <p class="text-xl">H. Jumaring</p>
+                <p class="text-xl">& Mrs. Cane</p>
                 <h1 class="mt-12 text-5xl font-satisfy">&</h1>
                 <h2 class="mt-12 text-3xl font-satisfy md:text-5xl lg:text-6xl">
                     The Bride
                 </h2>
-                <img src="{{ asset('assets/img/profile/wanita.png') }}"
-                    class="relative p-5 mb-3 rounded-t-full w-60 lg:w-72" />
-                <h2 class="text-3xl font-satisfy lg:text-5xl md:text-4xl">
-                    Ari Sugiarti, S.T
+                <div class="pl-6 pr-6 mt-8 lg:w-1/3">
+                    <div class="px-4 py-4 bg-white text-secondary">
+                        <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
+                            {{ $bride }}</h4>
+                        <img class="w-full" src="{{ asset('assets/img/gallery/6.JPG') }}" alt="" />
+                        <div class="">
+                        </div>
+                    </div>
+                </div>
+                {{-- <img src="{{ asset('assets/img/profile/wanita.png') }}"
+                    class="relative p-5 mb-3 rounded-t-full w-60 lg:w-72" /> --}}
+                <h2 class="mt-4 text-3xl font-satisfy lg:text-5xl md:text-4xl">
+                    Isa Bela Islami, S. Pd.
                 </h2>
                 <p class="text-xl">Daughter of</p>
-                <p class="text-xl">Mr. Yono Sukaryono</p>
-                <p class="mb-20 text-xl">& Mrs. Sumiyati</p>
+                <p class="text-xl">Dr. Triyanto Pristiwaluyo, M.Pd.</p>
+                <p class="mb-20 text-xl">& Mrs. Zulaicha</p>
             </div>
         </section>
         <!-- SECTION PROFILE END -->
@@ -268,18 +286,17 @@
                         <img src="{{ asset('assets/img/event/ring.png') }}" class="w-28" />
                         <h3 class="mt-3 mb-3 text-3xl">Akad Nikah</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Sunday</p>
-                        <p class="mb-2">25 | December | 2022</p>
-                        <p class="mb-2">Pukul 09.00 - 10.00</p>
+                        <p class="mt-3 mb-2">Thursday</p>
+                        <p class="mb-2">18 | May | 2023</p>
+                        <p class="mb-2">09.00 - 10.30 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Address</p>
-                        <p class="">Perkebunan Nusantara VIII. PT Persero</p>
+                        <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
-                            Jl. Ir. H. Juanda No.107, Lb. Siliwangi, Kecamatan Coblong, Kota
-                            Bandung, Jawa Barat 40132
+                            Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
                         </p>
 
-                        <a href="https://maps.app.goo.gl/9ZjNzMYiDY9wajXy5" target="_blank"
+                        <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
                             class="px-16 py-2 mt-3 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
                             View Location
                         </a>
@@ -289,18 +306,17 @@
                         <img src="{{ asset('assets/img/event/food.png') }}" class="w-28" />
                         <h3 class="mt-3 mb-3 text-3xl">Resepsi</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Sunday</p>
-                        <p class="mb-2">25 | December | 2022</p>
-                        <p class="mb-2">Pukul 11.00 - 14.00</p>
+                        <p class="mt-3 mb-2">Thursday</p>
+                        <p class="mb-2">18 | May | 2023</p>
+                        <p class="mb-2">11.00 - 15.00 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Address</p>
-                        <p class="">Perkebunan Nusantara VIII. PT Persero</p>
+                        <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
-                            Jl. Ir. H. Juanda No.107, Lb. Siliwangi, Kecamatan Coblong, Kota
-                            Bandung, Jawa Barat 40132
+                            Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
                         </p>
 
-                        <a href="https://maps.app.goo.gl/9ZjNzMYiDY9wajXy5" target="_blank"
+                        <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
                             class="px-16 py-2 mt-6 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
                             View Location
                         </a>
@@ -317,13 +333,20 @@
                     How the story begin...
                 </h2>
                 <div class="grid grid-cols-2 px-4 md:px-[200px] lg:px-[400px] justify-items-center">
-                    <img src="{{ asset('assets/img/gallery/7.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/8.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/1.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/2.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/3.JPG') }}"
                         class="relative w-[95%] mb-4 rounded-[10%] border-white" />
                     <img src="{{ asset('assets/img/gallery/4.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/5.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/6.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/7.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/8.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/9.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/10.JPG') }}"
+                        class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/11.JPG') }}"
+                        class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/12.JPG') }}"
+                        class="relative w-[95%] mb-4 rounded-[10%]" />
                 </div>
                 <div class="px-4 lg:px-[400px] md:px-[200px]">
                     <div
@@ -349,27 +372,44 @@
         <!-- SECTION RSVP START -->
         <section id="rsvp" class="relative bg-top bg-cover text-slate-800 bg-rsvp_bg">
             <!-- <img
-        src="assets/img/preface/separator-top.png"
+                                src="assets/img/preface/separator-top.png"
 
-        class="absolute top-0 left-0 w-full lg:scale-y-50 lg:-top-[140px]"
-      /> -->
+                                class="absolute top-0 left-0 w-full lg:scale-y-50 lg:-top-[140px]"
+                            /> -->
             <!-- <img
-        src="assets/img/event/separator-bottom.png"
+                                src="assets/img/event/separator-bottom.png"
 
-        class="absolute bottom-0 left-0 z-40 w-full"
-      /> -->
+                                class="absolute bottom-0 left-0 z-40 w-full"
+                            /> -->
             <img src="{{ asset('assets/img/preface/separator-top.png') }}"
                 class="absolute bottom-0 left-0 w-full rotate-180 lg:scale-y-50 lg:-bottom-[10%] z-40" />
             <img src="{{ asset('assets/img/event/bottom-start.png') }}"
                 class="absolute bottom-0 left-0 w-48 md:w-96" />
             <!-- <img
-        src="assets/img/event/bottom-end.png"
+                        src="assets/img/event/bottom-end.png"
 
-        class="absolute bottom-0 right-0 z-50 w-48 md:w-96"
-      /> -->
+                        class="absolute bottom-0 right-0 z-50 w-48 md:w-96"
+                    /> -->
             <div
                 class="relative flex flex-col items-center px-8 pt-8 pb-32 font-semibold text-center text-slate-800 font-quicksand">
-                <img src="{{ asset('assets/img/rsvp/gift.png') }}" class="w-20 mt-20 md:mt-30 lg:mt-36" />
+                <img src="{{ asset('assets/img/rsvp/live.png') }}" class="w-20 mt-20 md:mt-30 lg:mt-36" />
+                <div class="md:px-40">
+                    <div
+                        class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg text-slate">
+                        <h3 class="mt-3 mb-3 text-3xl">Live Streaming</h3>
+                        <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800 mb-3"></span>
+                        <p class="mb-2">
+                            Apabila Anda ingin menonton acara melalui laive streaming silakan menekan tombol di bawah ini
+                        </p>
+
+                        <a href="https://www.instagram.com/isa_bela_islami/" target="_blank"
+                            class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 md:text-2xl bg-primary hover:bg-opacity-75 font-quicksand"
+                            >
+                            Click Here
+                        </a>
+                    </div>
+                </div>
+                <img src="{{ asset('assets/img/rsvp/gift.png') }}" class="w-20 mt-12" />
                 <div class="md:px-40">
                     <div
                         class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg text-slate">
@@ -387,39 +427,8 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div
-          class="relative flex flex-col items-center px-4 py-8 mt-12 text-center bg-[rgba(118,123,104,.3)] rounded-lg text-slate w-full"
-        >
-          <h3 class="text-3xl">RSVP</h3>
-          <h3 class="mb-3">Silakan konfirmasi kehadiran Anda</h3>
-          <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800 mb-3"></span>
-          <form action="#">
-            <input
-              type="text"
-              name=""
-              id=""
-              class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.5)] text-slate-100 placeholder:text-slate-100"
-              placeholder="Isi Nama"
-            />
-            <select
-              name=""
-              id=""
-              class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.5)] text-slate-100"
-            >
-              <option value="">Kehadiran</option>
-              <option value="">Hadir</option>
-              <option value="">Tidak Hadir</option>
-              <option value="">Ragu-ragu</option>
-            </select>
-            <button
-              class="w-full px-16 py-2 mt-6 text-xl font-medium rounded-lg text-slate-700 md:py-4 md:text-2xl bg-primary hover:bg-opacity-75 font-quicksand"
-            >
-              Submit
-            </button>
-          </form>
-        </div> -->
                 <img src="{{ asset('assets/img/rsvp/congrat.png') }}" class="w-20 mt-12" />
-                <div class="grid mb-20 lg:px-4 lg:grid-cols-2 md:mb-40 md:px-40 w-full">
+                <div class="grid w-full mb-20 lg:px-4 lg:grid-cols-2 md:mb-40 md:px-40">
                     <!-- Form Ucapan & Doa -->
                     <div
                         class="relative flex flex-col items-center px-4 py-8 mt-8 text-center bg-[rgba(118,123,104,.3)] rounded-lg w-full lg:w-[95%]">
@@ -428,15 +437,15 @@
                         <input type="text" name="" id="guest_name"
                             class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-100 placeholder:text-slate-100"
                             placeholder="Name" />
-                        <div class="mt-2 hidden" id="alert-name" style="color: red"></div>
+                        <div class="hidden mt-2" id="alert-name" style="color: red"></div>
                         <input type="text" name="" id="guest_relationship"
                             class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-100 placeholder:text-slate-100"
                             placeholder="Relationship (family/friends/etc)" />
-                        <div class="mt-2 hidden" id="alert-relationship" style="color: red"></div>
+                        <div class="hidden mt-2" id="alert-relationship" style="color: red"></div>
                         <textarea name="" id="guest_wishes" rows="5"
                             class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-100 placeholder:text-slate-100"
-                            placeholder="Best Wishes for Ari & Fajar"></textarea>
-                        <div class="mt-2 hidden" id="alert-wishes" style="color: red"></div>
+                            placeholder="Best Wishes for {{ $bride }} & {{ $groom }}"></textarea>
+                        <div class="hidden mt-2" id="alert-wishes" style="color: red"></div>
                         <button id="submit_wish"
                             class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 lg:text-2xl bg-primary hover:bg-opacity-75 font-quicksand">
                             Submit
@@ -481,7 +490,7 @@
                     class="w-[150%] md:w-3/5 md:p-6 lg:w-1/4 relative" />
                 <h3 class="mb-2 text-xl">Best Regards,</h3>
                 <h2 class="text-3xl font-greatVibes md:text-5xl lg:text-6xl">
-                    Ari & Fajar
+                    {{ $bride }} & {{ $groom }}
                 </h2>
             </div>
         </section>
@@ -491,7 +500,7 @@
         <footer class="px-5 py-5 text-center w-100 bg-primary">
             <p class="font-quicksand">
                 Copyright 2022. Wedding Invitation.<br />
-                Created with <span style="color: red">❤</span> by Wedding Storia
+                Created with <span style="color: red">❤</span> by Wemate
             </p>
         </footer>
         <!-- SECTION FOOTER END -->
@@ -510,12 +519,12 @@
                 <div class="mt-2">
                     <input type="text" name="" id=""
                         class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 placeholder:text-slate-100 text-center font-bold"
-                        value="7772262925" readonly />
+                        value="022501080062509" readonly />
                 </div>
                 <div class="mt-3">
-                    <label for="" class="text-lg font-extrabold">Alamat</label>
+                    <label for="" class="text-lg font-extrabold">Address</label>
                     <textarea name="" id="" cols="30" rows="5"
-                        class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">JL. Dago Pojok No.45/ 161-B, RT.02, RW.03, KEL. Dago, KEC.Coblong, Bandung, Kode Pos 40135</textarea>
+                        class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">BTN Gowa Lestari Blok C no 11, Kel. Batangkaluku, Kec. Somba Opu, Kab. Gowa, Sulawesi Selatan.</textarea>
                 </div>
             </div>
             <div class="text-center">
@@ -612,7 +621,7 @@
     </script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Dec 25, 2022 09:00:00").getTime();
+        var countDownDate = new Date("May 18, 2023 09:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {

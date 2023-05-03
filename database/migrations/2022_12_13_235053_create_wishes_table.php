@@ -18,7 +18,7 @@ class CreateWishesTable extends Migration
             $table->string('name');
             $table->string('relationship');
             $table->text('wishes');
-            $table->integer('couple_id');
+            $table->string('couple_id');
             $table->timestamps();
         });
     }

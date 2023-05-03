@@ -10,9 +10,11 @@ class WishController extends Controller
 {
     public function index(Request $request)
     {
-        $wishes = Wish::where('couple_id', 1)->get();
+        $wishes = Wish::where('couple_id', 'icha-indar')->get();
         $for = $request->u;
-        return view('main', compact(['wishes', 'for']));
+        $groom = 'Indar';
+        $bride = 'Icha';
+        return view('main', compact(['wishes', 'for', 'bride', 'groom']));
     }
 
     public function store(Request $request)
@@ -32,7 +34,7 @@ class WishController extends Controller
         //create post
         $post = Wish::create([
             'name'     => $request->name,
-            'couple_id'   => 1,
+            'couple_id'   => 'icha-indar',
             'wishes'   => $request->wishes,
             'relationship'   => $request->relationship
         ]);
