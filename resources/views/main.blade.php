@@ -226,7 +226,7 @@
                     <div class="px-4 py-4 bg-white text-secondary">
                         <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
                             {{ $groom }}</h4>
-                        <img class="w-full" src="{{ asset('assets/img/gallery/5.jpg') }}" alt="" />
+                        <img class="w-full" src="{{ asset('assets/img/gallery/5.JPG') }}" alt="" />
                         <div class="">
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                     <div class="px-4 py-4 bg-white text-secondary">
                         <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
                             {{ $bride }}</h4>
-                        <img class="w-full" src="{{ asset('assets/img/gallery/6.jpg') }}" alt="" />
+                        <img class="w-full" src="{{ asset('assets/img/gallery/6.JPG') }}" alt="" />
                         <div class="">
                         </div>
                     </div>
@@ -333,19 +333,19 @@
                     How the story begin...
                 </h2>
                 <div class="grid grid-cols-2 px-4 md:px-[200px] lg:px-[400px] justify-items-center">
-                    <img src="{{ asset('assets/img/gallery/1.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/2.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/1.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/2.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/3.jpg') }}"
                         class="relative w-[95%] mb-4 rounded-[10%] border-white" />
                     <img src="{{ asset('assets/img/gallery/4.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/7.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/8.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/9.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/10.jpg') }}"
+                    <img src="{{ asset('assets/img/gallery/9.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/10.JPG') }}"
                         class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/11.jpg') }}"
+                    <img src="{{ asset('assets/img/gallery/11.JPG') }}"
                         class="relative w-[95%] mb-4 rounded-[10%]" />
-                    <img src="{{ asset('assets/img/gallery/12.jpg') }}"
+                    <img src="{{ asset('assets/img/gallery/12.JPG') }}"
                         class="relative w-[95%] mb-4 rounded-[10%]" />
                 </div>
                 <div class="px-4 lg:px-[400px] md:px-[200px]">
