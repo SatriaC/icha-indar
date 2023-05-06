@@ -142,9 +142,9 @@
             <img src="{{ asset('assets/img/home/bottom-end.png') }}"
                 class="absolute bottom-0 right-0 w-60 md:w-96 lg:w-64" />
             <div class="relative flex flex-col items-center h-screen px-4 font-serif text-center"
-                style="padding-top: 33px;">
+                style="padding-top: 150px;">
                 <img src="{{ asset('assets/img/home/pengantin-3.png') }}"
-                    class="p-5 rounded-t-full w-[150%] md:w-3/5 md:p-6 lg:w-1/4" />
+                    class="w-1/2 p-5 rounded-t-full md:w-1/3 md:p-6 lg:w-1/3" />
                 <h4 class="mx-16 mb-3 text-xl md:mx-20 md:text-3xl lg:text-xl lg:mx-16">
                     The Wedding of
                 </h4>
@@ -226,7 +226,7 @@
                     <div class="px-4 py-4 bg-white text-secondary">
                         <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
                             {{ $groom }}</h4>
-                        <img class="w-full" src="{{ asset('assets/img/gallery/5.JPG') }}" alt="" />
+                        <img class="w-full" src="{{ asset('assets/img/profile/pria.jpg') }}" alt="" />
                         <div class="">
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                     <div class="px-4 py-4 bg-white text-secondary">
                         <h4 class="mt-1 mb-3 text-xl font-semibold text-secondary" style="color: black">
                             {{ $bride }}</h4>
-                        <img class="w-full" src="{{ asset('assets/img/gallery/6.JPG') }}" alt="" />
+                        <img class="w-full" src="{{ asset('assets/img/profile/wanita.jpg') }}" alt="" />
                         <div class="">
                         </div>
                     </div>
@@ -338,6 +338,8 @@
                     <img src="{{ asset('assets/img/gallery/3.JPG') }}"
                         class="relative w-[95%] mb-4 rounded-[10%] border-white" />
                     <img src="{{ asset('assets/img/gallery/4.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/5.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
+                    <img src="{{ asset('assets/img/gallery/6.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/7.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/8.JPG') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
                     <img src="{{ asset('assets/img/gallery/9.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
