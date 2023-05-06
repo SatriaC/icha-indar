@@ -293,9 +293,9 @@
                         <p class="mb-2">09.00 - 10.30 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Alamat</p>
-                        <p class="">Balai Aroepala Hertasning</p>
+                        {{-- <p class="">Balai Aroepala Hertasning</p> --}}
                         <p class="mb-2">
-                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa kabupaten Bantaeng.
+                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa Kabupaten Bantaeng.
                         </p>
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
@@ -313,9 +313,9 @@
                         <p class="mb-2">11.00 - 15.00 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Alamat</p>
-                        <p class="">Balai Aroepala Hertasning</p>
+                        {{-- <p class="">Balai Aroepala Hertasning</p> --}}
                         <p class="mb-2">
-                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa kabupaten Bantaeng.
+                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa Kabupaten Bantaeng.
                         </p>
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
