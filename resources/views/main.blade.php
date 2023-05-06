@@ -42,7 +42,7 @@
                 </h1>
             </div>
             <div class="mt-8 text-lg md:text-2xl lg:text-lg">
-                <p class="">Dear,</p>
+                <p class="">Kepada Yth</p>
                 <!-- <p class="">Bapak/Ibu/Saudara/i</p> -->
                 <h4 class="mt-1 text-2xl font-semibold scale-x-90 md:text-4xl">
                     {{ isset($for) ? $for : '' }}
@@ -53,7 +53,7 @@
           </p> -->
                 <button id="openPage"
                     class="px-8 py-2 mt-6 mb-20 text-2xl font-semibold border-2 rounded-lg md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-primary hover:bg-opacity-75 animate-pulse2 font-quicksand">
-                    Open Invitation
+                    Buka Undangan
                 </button>
             </div>
         </div>
@@ -81,7 +81,7 @@
                             <div class="grid content-center h-full grid-cols-1 px-4 py-2 justify-items-center"
                                 onclick="delay500()">
                                 <img src="{{ asset('assets/img/navbar/home.png') }}" class="" />
-                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Home</span>
+                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Beranda</span>
                             </div>
                         </a>
                     </li>
@@ -90,7 +90,7 @@
                             <div class="grid content-center h-full grid-cols-1 px-4 py-2 justify-items-center"
                                 onclick="delay500()">
                                 <img src="{{ asset('assets/img/navbar/ring.png') }}" class="" />
-                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Couple</span>
+                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Pasangan</span>
                             </div>
                         </a>
                     </li>
@@ -99,7 +99,7 @@
                             <div class="grid content-center h-full grid-cols-1 px-4 py-2 justify-items-center"
                                 onclick="delay500()">
                                 <img src="{{ asset('assets/img/navbar/schedule.png') }}" class="" />
-                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Date</span>
+                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Acara</span>
                             </div>
                         </a>
                     </li>
@@ -108,7 +108,7 @@
                             <div class="grid content-center h-full grid-cols-1 px-4 py-2 justify-items-center"
                                 onclick="delay500()">
                                 <img src="{{ asset('assets/img/navbar/gallery.png') }}" class="" />
-                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Gallery</span>
+                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Galeri</span>
                             </div>
                         </a>
                     </li>
@@ -117,7 +117,7 @@
                             <div class="grid content-center h-full grid-cols-1 px-4 py-2 justify-items-center"
                                 onclick="delay500()">
                                 <img src="{{ asset('assets/img/navbar/wish.png') }}" class="" />
-                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Wish</span>
+                                <span class="text-base text-slate-200 hover:text-primary font-quicksand">Ucapan</span>
                             </div>
                         </a>
                     </li>
@@ -164,10 +164,12 @@
                 class="relative flex flex-col items-center justify-center h-screen px-4 pr-32 text-center text-white font-quicksand md:px-20 lg:px-32">
                 <img src="{{ asset('assets/img/ayat/icon.png') }}" class="w-16 mb-5 md:w-28" />
                 <p class="mb-3 text-base md:text-2xl">
-                    Marry off the ˹free˺ singles among you, as well as the righteous of your bondmen and bondwomen. If
-                    they are poor, Allah will enrich them out of His bounty. For Allah is All-Bountiful, All-Knowing.
+                    Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+                    jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu
+                    rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
+                    Allah) bagi kaum yang berpikir.
                 </p>
-                <p class="text-base md:text-2xl">- QS. An-nur : 32 -</p>
+                <p class="text-base md:text-2xl">- QS. Ar-Rum : 21 -</p>
             </div>
         </section>
         <!-- SECTION AYAT END -->
@@ -185,26 +187,26 @@
                 <div class="flex flex-col text-sm font-semibold text-center font-quicksand md:text-xl">
                     <p class="mb-3">Assalamu’alaikum Wr. Wb.</p>
                     <p class="mb-3">
-                        By the grace and blessing of Allah SWT, who has created His
-                        creatures in pairs, we intend to hold our wedding.
+                        Maha Suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan. Perkenankan kami
+                        untuk mengundang anda pada pernikahan kami :
                     </p>
-                    <p>We've Married for</p>
+                    {{-- <p>We've Married for</p> --}}
                     <div class="grid grid-cols-4 gap-4">
                         <div>
                             <p class="text-lg md:text-2xl" id="days">00</p>
-                            <p>Days</p>
+                            <p>Hari</p>
                         </div>
                         <div>
                             <p class="text-lg md:text-2xl" id="hours">00</p>
-                            <p>Hours</p>
+                            <p>Jam</p>
                         </div>
                         <div>
                             <p class="text-lg md:text-2xl" id="minutes">00</p>
-                            <p>Minutes</p>
+                            <p>Menit</p>
                         </div>
                         <div>
                             <p class="text-lg md:text-2xl" id="seconds">00</p>
-                            <p>Seconds</p>
+                            <p>Detik</p>
                         </div>
                     </div>
                 </div>
@@ -220,7 +222,7 @@
                 <img src="{{ asset('assets/img/profile/center-2.png') }}"
                     class="absolute bottom-0 left-0 w-3/5 lg:w-1/4" />
                 <h2 class="mt-20 text-3xl font-satisfy md:text-5xl lg:text-6xl">
-                    The Groom
+                    Mempelai Pria
                 </h2>
                 <div class="pl-6 pr-6 mt-8 lg:w-1/3">
                     <div class="px-4 py-4 bg-white text-secondary">
@@ -236,12 +238,12 @@
                 <h2 class="mt-4 text-3xl font-satisfy lg:text-5xl md:text-4xl">
                     Indar Jaya, S. E.
                 </h2>
-                <p class="text-xl">Son of</p>
+                <p class="text-xl">Putra dari</p>
                 <p class="text-xl">H. Jumaring</p>
-                <p class="text-xl">& Mrs. Cane</p>
+                <p class="text-xl">& Ibu Cane</p>
                 <h1 class="mt-12 text-5xl font-satisfy">&</h1>
                 <h2 class="mt-12 text-3xl font-satisfy md:text-5xl lg:text-6xl">
-                    The Bride
+                    Mempelai Wanita
                 </h2>
                 <div class="pl-6 pr-6 mt-8 lg:w-1/3">
                     <div class="px-4 py-4 bg-white text-secondary">
@@ -257,9 +259,9 @@
                 <h2 class="mt-4 text-3xl font-satisfy lg:text-5xl md:text-4xl">
                     Isa Bela Islami, S. Pd.
                 </h2>
-                <p class="text-xl">Daughter of</p>
+                <p class="text-xl">Putri dari</p>
                 <p class="text-xl">Dr. Triyanto Pristiwaluyo, M.Pd.</p>
-                <p class="mb-20 text-xl">& Mrs. Zulaicha</p>
+                <p class="mb-20 text-xl">& Ibu Zulaicha</p>
             </div>
         </section>
         <!-- SECTION PROFILE END -->
@@ -286,11 +288,11 @@
                         <img src="{{ asset('assets/img/event/ring.png') }}" class="w-28" />
                         <h3 class="mt-3 mb-3 text-3xl">Akad Nikah</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Thursday</p>
-                        <p class="mb-2">18 | May | 2023</p>
+                        <p class="mt-3 mb-2">Kamis</p>
+                        <p class="mb-2">18 | Mei | 2023</p>
                         <p class="mb-2">09.00 - 10.30 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Address</p>
+                        <p class="mt-3 mb-2">Alamat</p>
                         <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
                             Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
@@ -298,7 +300,7 @@
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
                             class="px-16 py-2 mt-3 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
-                            View Location
+                            Lihat Lokasi
                         </a>
                     </div>
                     <div
@@ -306,11 +308,11 @@
                         <img src="{{ asset('assets/img/event/food.png') }}" class="w-28" />
                         <h3 class="mt-3 mb-3 text-3xl">Resepsi</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Thursday</p>
-                        <p class="mb-2">18 | May | 2023</p>
+                        <p class="mt-3 mb-2">Kamis</p>
+                        <p class="mb-2">18 | Mei | 2023</p>
                         <p class="mb-2">11.00 - 15.00 WITA</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Address</p>
+                        <p class="mt-3 mb-2">Alamat</p>
                         <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
                             Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
@@ -318,7 +320,7 @@
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
                             class="px-16 py-2 mt-6 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
-                            View Location
+                            Lihat Lokasi
                         </a>
                     </div>
                 </div>
@@ -330,7 +332,7 @@
         <section id="gallery" class="relative pt-12 pb-12 bg-top bg-cover text-slate-800 bg-gallery_bg">
             <div class="relative">
                 <h2 class="mb-8 ml-4 text-3xl text-white font-satisfy md:text-5xl lg:text-6xl">
-                    How the story begin...
+                    Bagaimana cerita dimulai...
                 </h2>
                 <div class="grid grid-cols-2 px-4 md:px-[200px] lg:px-[400px] justify-items-center">
                     <img src="{{ asset('assets/img/gallery/1.jpg') }}" class="relative w-[95%] mb-4 rounded-[10%]" />
@@ -357,13 +359,13 @@
                         <!-- <h3 class="mt-3 mb-3 text-3xl">Resepsi</h3> -->
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-4 mb-2 lg:text-2xl md:text-xl font-quicksand">
-                            "We first met on June 27th 2021 at one of the cafe in Dago Atas.
-                            That was a short meeting yet so impressive for both of us that
-                            we managed to get to know and understand one another afterward.
-                            After millions of prayers we have made in year, we both then
-                            agreed to meet our parents for the first time on September 18th
-                            2022. And finally we decided to step forward to bond ourselves
-                            with the sacred rope of marriage in 25 of December 2022."
+                            "Kami pertama kali bertemu pada 3 Maret 2022 di salah satu acara keakraban remaja muda-mudi
+                            di Bulukumba. Itu adalah pertemuan singkat namun sangat mengesankan bagi kami berdua
+                            sehingga kami berhasil mengenal dan memahami satu sama lain sesudahnya. Setelah berjuta doa
+                            yang kami panjatkan dalam dua bulan setelahnya, kami berdua kemudian bersepakat untuk
+                            bertemu dengan orang tua kami untuk pertama kalinya pada tanggal 5 Mei 2022. Dan akhirnya
+                            kami memutuskan untuk melangkah maju mengikatkan diri dengan tali suci pernikahan pada
+                            tanggal 15 April 2023."
                         </p>
                     </div>
                 </div>
@@ -401,13 +403,13 @@
                         <h3 class="mt-3 mb-3 text-3xl">Live Streaming</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800 mb-3"></span>
                         <p class="mb-2">
-                            Apabila Anda ingin menonton acara melalui laive streaming silakan menekan tombol di bawah ini
+                            Apabila Anda ingin menonton acara melalui laive streaming silakan menekan tombol di bawah
+                            ini
                         </p>
 
                         <a href="https://www.instagram.com/isa_bela_islami/" target="_blank"
-                            class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 md:text-2xl bg-primary hover:bg-opacity-75 font-quicksand"
-                            >
-                            Click Here
+                            class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 md:text-2xl bg-primary hover:bg-opacity-75 font-quicksand">
+                            Klik disini
                         </a>
                     </div>
                 </div>
@@ -425,7 +427,7 @@
                         <button
                             class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 md:text-2xl bg-primary hover:bg-opacity-75 font-quicksand"
                             id="open">
-                            Click Here
+                            Klik disini
                         </button>
                     </div>
                 </div>
@@ -524,7 +526,7 @@
                         value="022501080062509" readonly />
                 </div>
                 <div class="mt-3">
-                    <label for="" class="text-lg font-extrabold">Address</label>
+                    <label for="" class="text-lg font-extrabold">Alamat</label>
                     <textarea name="" id="" cols="30" rows="5"
                         class="w-full px-4 py-2 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-900 text-center font-bold mt-1">BTN Gowa Lestari Blok C no 11, Kel. Batangkaluku, Kec. Somba Opu, Kab. Gowa, Sulawesi Selatan.</textarea>
                 </div>
