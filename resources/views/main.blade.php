@@ -295,7 +295,7 @@
                         <p class="mt-3 mb-2">Alamat</p>
                         <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
-                            Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
+                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa kabupaten Bantaeng.
                         </p>
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
@@ -315,7 +315,7 @@
                         <p class="mt-3 mb-2">Alamat</p>
                         <p class="">Balai Aroepala Hertasning</p>
                         <p class="mb-2">
-                            Jl. Aroepala No. 99, Karunrung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan
+                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa kabupaten Bantaeng.
                         </p>
 
                         <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
