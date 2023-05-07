@@ -428,7 +428,7 @@
                         <div class="hidden mt-2" id="alert-relationship" style="color: red"></div>
                         <textarea name="" id="guest_wishes" rows="5"
                             class="w-full px-4 py-2 mt-3 rounded-lg bg-[rgba(118,123,104,.4)] text-slate-100 placeholder:text-slate-100"
-                            placeholder="Best Wishes for {{ $bride }} & {{ $groom }}"></textarea>
+                            placeholder="Best Wishes for {{ $groom }} & {{ $bride }}"></textarea>
                         <div class="hidden mt-2" id="alert-wishes" style="color: red"></div>
                         <button id="submit_wish"
                             class="w-full px-16 py-2 mt-3 text-xl font-medium rounded-lg text-slate-700 md:py-4 lg:text-2xl bg-primary hover:bg-opacity-75 font-quicksand">
