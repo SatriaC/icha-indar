@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>Wedding of {{ $bride }} & {{ $groom }}</title>
+    <title>Wedding of {{ $groom }} & {{ $bride }}</title>
     <link rel="icon" href="{{ asset('assets/heart.png') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <!-- Font Family -->
@@ -32,13 +32,13 @@
                     The Wedding of
                 </h4>
                 <h1 class="mb-4 text-5xl font-semibold md:text-8xl lg:text-6xl font-greatVibes">
-                    {{ $bride }}
+                    {{ $groom }}
                 </h1>
                 <h3 class="mb-2 text-3xl font-semibold md:text-6xl lg:text-5xl font-greatVibes">
                     &
                 </h3>
                 <h1 class="mb-12 text-5xl font-semibold md:mb-28 md:text-8xl lg:text-6xl lg:mb-20 font-greatVibes">
-                    {{ $groom }}
+                    {{ $bride }}
                 </h1>
             </div>
             <div class="mt-8 text-lg md:text-2xl lg:text-lg">
@@ -149,7 +149,7 @@
                     The Wedding of
                 </h4>
                 <h2 class="mb-4 text-4xl font-semibold md:text-6xl lg:text-6xl font-greatVibes">
-                    {{ $bride }} & {{ $groom }}
+                    {{ $groom }} & {{ $bride }}
                 </h2>
             </div>
         </section>
@@ -282,35 +282,15 @@
                     <span class="text-3xl">the</span>
                     <h1 class="text-7xl">Date</h1>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 md:mb-32 lg:mb-40">
+                <div class="grid grid-cols-1 md:mb-32 lg:mb-40">
                     <div
                         class="relative flex flex-col items-center px-2 py-8 mt-12 text-center bg-[rgba(118,123,104,.4)] rounded-lg lg:w-[95%] lg:px-8">
                         <img src="{{ asset('assets/img/event/ring.png') }}" class="w-28" />
-                        <h3 class="mt-3 mb-3 text-3xl">Akad Nikah</h3>
-                        <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Kamis</p>
-                        <p class="mb-2">18 | Mei | 2023</p>
-                        <p class="mb-2">09.00 - 10.30 WITA</p>
-                        <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Alamat</p>
-                        {{-- <p class="">Balai Aroepala Hertasning</p> --}}
-                        <p class="mb-2">
-                            Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa Kabupaten Bantaeng.
-                        </p>
-
-                        <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
-                            class="px-16 py-2 mt-3 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
-                            Lihat Lokasi
-                        </a>
-                    </div>
-                    <div
-                        class="relative flex flex-col items-center px-2 py-8 mt-12 text-center bg-[rgba(118,123,104,.4)] rounded-lg lg:w-[95%] lg:px-8">
-                        <img src="{{ asset('assets/img/event/food.png') }}" class="w-28" />
                         <h3 class="mt-3 mb-3 text-3xl">Resepsi</h3>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
-                        <p class="mt-3 mb-2">Kamis</p>
-                        <p class="mb-2">18 | Mei | 2023</p>
-                        <p class="mb-2">11.00 - 15.00 WITA</p>
+                        <p class="mt-3 mb-2">Sabtu</p>
+                        <p class="mb-2">20 | Mei | 2023</p>
+                        <p class="mb-2">10.00 - Selesai</p>
                         <span class="w-2/5 h-[1.5px] mx-auto my-0 bg-slate-800"></span>
                         <p class="mt-3 mb-2">Alamat</p>
                         {{-- <p class="">Balai Aroepala Hertasning</p> --}}
@@ -318,8 +298,8 @@
                             Jln. Pros Barakassi Kamp. Parang Desa Pa'bentengang kecamatan Eremerasa Kabupaten Bantaeng.
                         </p>
 
-                        <a href="https://goo.gl/maps/jkZy7WouF62skfxE9" target="_blank"
-                            class="px-16 py-2 mt-6 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
+                        <a href="https://maps.app.goo.gl/MfRPFtNEHy9EudzN6" target="_blank"
+                            class="px-16 py-2 mt-3 text-xl font-medium border-2 rounded-lg text-slate-100 md:py-4 md:text-4xl lg:text-2xl border-slate-700 bg-secondary hover:bg-opacity-75 font-quicksand">
                             Lihat Lokasi
                         </a>
                     </div>
@@ -494,7 +474,7 @@
                     class="w-[150%] md:w-3/5 md:p-6 lg:w-1/4 relative" />
                 <h3 class="mb-2 text-xl">Best Regards,</h3>
                 <h2 class="text-3xl font-greatVibes md:text-5xl lg:text-6xl">
-                    {{ $bride }} & {{ $groom }}
+                    {{ $groom }} & {{ $bride }}
                 </h2>
             </div>
         </section>
@@ -625,7 +605,7 @@
     </script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("May 18, 2023 09:00:00").getTime();
+        var countDownDate = new Date("May 20, 2023 10:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
